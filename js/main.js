@@ -26,4 +26,32 @@ const strNum = "1010";
 console.log(Number(strNum));
 
 
-console.log(Number.isInteger(num2));''
+console.log(Number.isInteger(num2));
+console.log(sum1.toString)
+
+console.log(Math.PI);
+console.log(Math.trunc(Math.PI));
+
+console.log(Math.round(12.98))
+
+console.log(Math.ceil(12.11))
+
+console.log(Math.floor(12.99))
+
+console.log(Math.pow(10,2))
+console.log(Math.min(3,6,3,4,5,6,7))
+
+console.log(Math.max(3,6,3,4,5,6,7))
+console.log(Math.floor(Math.random()*100)+1)
+console.log(Math.round(Math.random()*10)+1)
+console.log(Math.ceil(Math.random()*10)+1)
+
+
+const myName = "jerin";
+
+console.log(myName.charAt(Math.floor(Math.random()*5)))
+console.log(myName.charAt(Math.floor(Math.random()*5)))
+console.log(myName.charAt(Math.floor(Math.random()*5)))
+console.log(myName.charAt(Math.floor(Math.random()*5)))
+
+
