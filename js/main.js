@@ -154,7 +154,7 @@ let myBoolean = confirm("oops");
 console.log(myBoolean);
 
 let my = prompt("oops");
-if(my.length){
+if(my == null){
     console.log(my ?? "you did't enter your anything")
 }else{
     console.log("you did't enter anything")
