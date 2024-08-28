@@ -228,3 +228,13 @@ const res =findUser(123);
 console.log(res.name1)
 console.log(res);
 
+
+const jsonObj = {
+    mobile : "mobile name",
+    model :"model name",
+    founder : "founder"
+}
+
+const sendJson = JSON.stringify(jsonObj);
+console.log(sendJson);
+console.log(typeof(sendJson));
