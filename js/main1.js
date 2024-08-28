@@ -238,3 +238,7 @@ const jsonObj = {
 const sendJson = JSON.stringify(jsonObj);
 console.log(sendJson);
 console.log(typeof(sendJson));
+
+
+const reciveJson = JSON.parse(sendJson);
+console.log(reciveJson);
