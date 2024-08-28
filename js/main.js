@@ -147,15 +147,97 @@ let computer = "rock";
 let result  =  player == computer ? "tie" : "not Tie"
 console.log(result);
 
-let myBoolean1 = alert("omg");
-console.log(myBoolean1);
+// let myBoolean1 = alert("omg");
+// console.log(myBoolean1);
 
-let myBoolean = confirm("oops");
-console.log(myBoolean);
+// let myBoolean = confirm("oops");
+// console.log(myBoolean);
 
-let my = prompt("oops");
-if(my == null){
-    console.log(my ?? "you did't enter your anything")
-}else{
-    console.log("you did't enter anything")
+// let my = prompt("oops");
+// if(my){
+//     console.log(my ?? "you did't enter your anything")
+// }else{
+//     console.log("you did't enter anything")
+// }
+// console.log(my.trim())
+// console.log(my.trim().length)
+
+// for(let i =1;i<=10;i++){
+//     console.log(i)
+// }
+// let j = 10;
+// while(j<=50){
+//     console.log(j)
+//     j = j+10;
+// }
+
+let i = 10;
+do{
+    console.log(i)
+    i = i +10;
+}while(i<=50);
+
+let myName1 = "jerin";
+for(i=0;i<myName1.length;i++){
+    console.log(myName1.charAt(i))
 }
+
+//functions....
+
+
+let upperCaseName = "jerin";
+console.log(upperCaseName.toLocaleUpperCase());
+console.log(upperCaseName.toLocaleUpperCase().toLocaleLowerCase());
+
+
+
+
+function substract(){
+    let a = 5;
+    let b = 10;
+    return a-b;
+}
+
+
+function substractWithvariable(a,b){
+    c = a-b;
+    if(c >5){
+        c =3;
+    }else if(c !== 2){
+        c = c===2 ? 100 :10;
+    }else{
+        c = 0;
+    }
+    return c;
+
+}
+
+
+console.log(substract())
+
+console.log(substractWithvariable(4,2))
+
+let mail ="jerinjack111@gmail.com".slice(0,9);
+console.log(mail.indexOf("k"));
+console.log(mail);
+
+let mail1 ="jerinjack111@gmail.com"
+
+// console.log(getNameFromEmail(mail1))
+
+const nameMy = (mailReq) => {
+    console.log(substractWithvariable(10,10))
+    return mail1.slice(0,5);
+}
+
+const nameMy1 = function getNameFromEmail(mailReq){
+    console.log(substractWithvariable(10,10))
+    return mail1.slice(0,9);
+}
+
+console.log(nameMy1(mail1))
+
+console.log(nameMy(mail1))
+
+
+
