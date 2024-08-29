@@ -7,9 +7,9 @@ html, body {
     background-color: rgba(255, 255, 255, 0.599)
 } */
 
-* {
+/* * {
   font-family: "Roboto", sans-serif;
-}
+} */
 
 main {
   height: 80vh;
@@ -19,29 +19,22 @@ main {
   /* //align-items: center; */
 }
 
-footer {
-  height: 20vh;
-  display: flex;
-  background-color: rgb(0, 0, 0);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .header {
   height: 100px;
   display: flex;
   flex-wrap: wrap;
   /* justify-items: left; */
-  /* background-color: rgb(44, 32, 60); */
+  background-color: rgb(81, 78, 84);
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
 }
 
-.header > div {
+/* .header > div {
   justify-items: left;
-}
+} */
 
 .side_bar {
   height: 100%;
@@ -57,6 +50,7 @@ footer {
   justify-content: center;
   display: flex;
 
+
   /* padding-left: 500px;
     padding-right: 500px; */
 }
@@ -68,12 +62,21 @@ footer {
   /* font-family: 'Source Sans Pro', sans-serif; */
 /* } */ 
 .header-name {
-  text-align: left;
-  font-size: 22px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold; /* This will make the text bold, as seen in the image */
-  letter-spacing: 3px; /* Optional: Adds some spacing between letters for a more polished look */
-  color: #434343; /* A dark grey color, similar to the text in the image */
+    display: flex;
+    text-align: left;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #ffffff;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.header-name:hover{
+    color: black;
 }
 
 .nav-items {
@@ -87,6 +90,9 @@ footer {
   width: 400px;
   list-style: none;
 }
+.name{
+    padding-left: 10px;
+}
 
 .nav-item {
   align-items: center;
@@ -94,9 +100,9 @@ footer {
   height: 40px;
   display: flex;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   font-family: "Poppins", sans-serif;
-  color: rgb(61, 59, 59);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   letter-spacing: 3px;
   padding: 0 20px;
@@ -104,11 +110,11 @@ footer {
 }
 
 .nav-item:hover {
-  color: rgb(194, 53, 38);
+  color: rgb(0, 0, 0);
 }
 
 .header-content {
-  width: 172vh;
+  width: 154vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,13 +126,70 @@ footer {
 }
 
 .card{
+  flex-grow: 1;
   height: 100px;
   width: 100px;
   display: flex;
+  flex-wrap: wrap;
   background-color: black;
   padding-top: 10px;
   margin: 10px;
-  color: #dfdfdc;
+  color: #ffffff;
   text-align: center;
   justify-content: center;
+}
+
+.selection{
+    display: flex;
+    flex-basis: 200;
+}
+
+.large-image {
+    display: block;            /* To make centering easier */
+    margin: 0 auto;            /* Center the image horizontally */
+    /* max-width: 100%;         */
+    height: auto;              /* Maintain the aspect ratio */
+    object-fit: cover;  
+    width: 182vh;
+  }
+
+  .center-image {
+    display: block;            /* To make centering easier */
+    margin: 0 auto;            /* Center the image horizontally */
+    max-width: 100%;           /* Make the image responsive to the width */
+    height: auto;              /* Maintain the aspect ratio */
+    object-fit: cover;         /* Ensures the image covers the area */
+  }
+
+  .profile-img {
+    display: flex;
+    width: 50px;
+    height: 52px; /* Ensure height matches width for a perfect circle */
+    border-radius: 50%; /* This makes the image round */
+    object-fit: cover; /* Ensures the image covers the circle area */
+    border: 2px solid #ddd; /* Optional: Adds a border around the image */
+}
+
+footer {
+    height: 25vh;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+.footer-upper{
+    background-color: rgb(86, 86, 86);
+    height: 100px;
+    width: 145vh;
+}
+
+.footer-lower{
+    background-color: rgb(86, 86, 86);
+    height: 50px;
+    width: 145vh;
+    border-top:10px;
+    margin-top: 2px;
 }

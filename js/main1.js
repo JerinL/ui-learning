@@ -291,10 +291,46 @@ const doc1 = document.getElementsByClassName("content_block");
 console.log(doc1);
 
 
-const divs = doc.querySelectorAll("div");
-console.log(divs);
-const cc = doc.querySelectorAll("div");
-cc[1].style.color = "red";
-cc[1].style.backgroundColor = "yellow";
+// const divs = doc.querySelectorAll("div");
+// console.log(divs);
+// const cc = doc.querySelectorAll("div");
+// cc[1].style.color = "red";
+// cc[1].style.backgroundColor = "yellow";
 
 
+// document.addEventListener("readyStateChane",(stage)=>{
+//   if(Event.target.readyState === "complete"){
+//     console.log("DONEEEE")
+//   }else{
+//     console.log("NOOO")
+//   }
+// })
+
+const main = document.querySelector("#main-data");
+
+const div = main.querySelector('div');
+
+console.log(div);
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Select the main element by its ID
+  const main = document.querySelector('#main-data');
+  
+  // Check if main is found
+  if (main) {
+    // Select the first div inside the main element
+    const div = main.querySelector('div');
+    
+    // Check if div is found and log it
+    if (div) {
+      console.log(div);
+      const h1 = document.createElement("h1");
+      h1.textContent = 'Hello, World!';
+      //div.appendChild(h1);
+    } else {
+      console.log('Div not found inside main.');
+    }
+  } else {
+    console.log('Main element not found.');
+  }
+});
