@@ -1,4 +1,4 @@
-//scops
+// scops
 let x = 1;
 var x1 = 1;
 const x2 = 1;
@@ -160,11 +160,11 @@ class Person {
   }
 
   getMail() {
-    console.log(this.mail1)
+    console.log(this.mail1);
     return this.mail1;
   }
   getName() {
-    console.log(this.name1)
+    console.log(this.name1);
     return this.name1;
   }
 }
@@ -211,34 +211,90 @@ studObj.getStudents();
 const teacherObj = new Teacher(2, "teacherName", "teacher123@gmail.com");
 teacherObj.getTeacher();
 
-
-function findUser(id){
-    const id1 = id;
-    const name1 = "jerin";
-    const age1 = 22;
-    const userObj = {
-        id : id1,
-        name : name1,
-        age : age1
-    }
-    return userObj;
+function findUser(id) {
+  const id1 = id;
+  const name1 = "jerin";
+  const age1 = 22;
+  const userObj = {
+    id: id1,
+    name: name1,
+    age: age1,
+  };
+  return userObj;
 }
 
-const res =findUser(123);
-console.log(res.name1)
+const res = findUser(123);
+console.log(res.name1);
 console.log(res);
 
-
 const jsonObj = {
-    mobile : "mobile name",
-    model :"model name",
-    founder : "founder"
-}
+  mobile: "mobile name",
+  model: "model name",
+  founder: "founder",
+};
 
 const sendJson = JSON.stringify(jsonObj);
 console.log(sendJson);
-console.log(typeof(sendJson));
-
+console.log(typeof sendJson);
 
 const reciveJson = JSON.parse(sendJson);
 console.log(reciveJson);
+
+// errors  and error handle
+
+const variable = "jerin";
+console.log(variable);
+
+function fName() {
+  let i = 0;
+  while (i < 5) {
+    try {
+      // console.log("tryyyyyyyinggggg")
+      // const res = [1,2,3];
+      // res = 12;
+      // const name = prompt("type your name");
+      // console.log(typeof(name));
+      // if(i%2 !==0){
+      throw new customError("  this Odd number");
+      // }else{
+      //   console.log("evennnnnnn");
+      // }
+    } catch (err) {
+      // alert("error dude fix it ")
+      console.error(err.name);
+      console.error(err.stack);
+      // console.log(err)
+    } finally {
+      console.log("im finally");
+      i++;
+    }
+  }
+}
+fName();
+
+function customError(message) {
+  this.message = message;
+  this.name = "custom Error";
+  this.stack = `${this.name} ${message}`;
+}
+
+let string = "name";
+let number1 = 11;
+console.log(string+number);
+
+
+
+const doc = document.getElementById("main-data");
+console.log(doc);
+
+const doc1 = document.getElementsByClassName("content_block");
+console.log(doc1);
+
+
+const divs = doc.querySelectorAll("div");
+console.log(divs);
+const cc = doc.querySelectorAll("div");
+cc[1].style.color = "red";
+cc[1].style.backgroundColor = "yellow";
+
+

@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Document
-    </title>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lerning Ui</title>
+    <link rel="stylesheet" href="css/style.css" />
     <script>
-        console.log("hello jerin");
-        let number = 12;
-        let number2 = 5;
-        let sum = number + number2;
-        console.log(sum);
-        console.log(number + number2)
+      console.log("hello jerin");
+      let number = 12;
+      let number2 = 5;
+      let sum = number + number2;
+      console.log(sum);
+      console.log(number + number2);
+      const varr = document.getElementsByClassName("main_content");
+      console.log(varr);
+      const varr1 = document.getElementById("main-data");
+      console.log(varr1);
     </script>
-    <script src="js/main.js"> </script>
-    <script src="js/main1.js"></script>
-</head>
-<body>
-    <header>
-     
-            <nav>   
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a>Skill</a></li>
-                    <li><a>Projects</a></li>
-                </ul>
-            </nav>
-    
-    </header>
-    <main>
-        <div>
-            <ul>name</ul>
-            <ul>name</ul>
-            <ul>name</ul>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div id="header-data" , class="header-content">
+        <div class="header-name">
+          <span class="name">JERIN L</span>
         </div>
+        <div>
+          <nav>
+            <ul id="nav-data" class="nav-items">
+              <li><a class="nav-item" href="#home">HOME</a></li>
+              <li><a class="nav-item" href="#skill">SKILL</a></li>
+              <li><a class="nav-item" href="#projects">PROJECTS</a></li>
+              <li><a class="nav-item" href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main-data" class="content_block">
+      <!-- <div class="side_bar">
+        <h1>hiiiii</h1>
+      </div> -->
+      <div class="main_content">
+        <section>
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+            <div class="card">4</div>
+            <div class="card">5</div>
+            <div class="card">6</div>
+          </section>
+        <ul>
+          name
+        </ul>
+        <ul>
+          name
+        </ul>
+        <ul>
+          name
+        </ul>
+      </div>
     </main>
-
-<footer>
-<a>footer</a>
-</footer>
-</body>
+    <script src="js/main1.js"></script>
+    <footer>
+      <a>footer</a>
+    </footer>
+  </body>
 </html>
