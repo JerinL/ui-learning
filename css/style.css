@@ -50,8 +50,9 @@ main {
   width: 100%;
   background-color: #dfdfdc;
   text-align: center;
-  justify-content: center;
+  /* justify-content: center; */
   display: flex;
+  
 
 
   /* padding-left: 500px;
@@ -150,11 +151,13 @@ main {
 
 .large-image {
     display: block;            /* To make centering easier */
-    margin: 0 auto;            /* Center the image horizontally */
+    margin: 0 auto;  
+    display: block;          /* Center the image horizontally */
     /* max-width: 100%;         */
     height: auto;              /* Maintain the aspect ratio */
     object-fit: cover;  
     width: 100%;
+    height: 100%;
   }
 
   .center-image {
@@ -192,19 +195,21 @@ footer {
     width: 145vh;
 }
 
-.footer-lower{
-    background-color: rgb(0, 0, 0);
-    height: 50px;
-    width: 145vh;
-    border-top:10px;
-    /* margin-top: 2px; */
-    padding-bottom: 10px;
-    position: relative;
-    border-top: 0.5px solid rgb(197, 197, 197);
-    text-align: center;
-    /* outline:  solid red; */
+.footer-lower {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  width: 145vh;
+  border-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  border-top: 0.5px solid rgb(95 94 94);
+  text-align: center;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: row;
+  justify-content: center;
 }
-
 /* .footer-lower ::before{
   content: "";
   position: absolute;
@@ -233,6 +238,7 @@ footer {
 .icons {
     height: 39px;
     width: 38px;
+    margin: 5px  ;
 }
 
 .nav-icon{
@@ -246,4 +252,49 @@ footer {
 .social{
   padding-left: 4px;
   letter-spacing: 4px;
+}
+
+.low-footer-content{
+  padding-left: 10px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/* .main_content {
+  position: relative; /* Make sure the main container is positioned */
+/* } */ 
+
+/* .image-container {
+  position: relative; /* Container for the image and overlay */
+/* } */ 
+
+/* .large-image {
+  display: block; /* Ensures the image behaves as a block element */
+  /* width: 100%; Ensures image scales within its container */
+  /* height: auto; Maintains aspect ratio */
+/* } */ 
+
+.overlay-content {
+  position: absolute;
+  top: 51%;
+  width: 4%;
+  height: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: white;
+  color: white;
+  /* background: rgba(0, 0, 0, 0.5); Semi-transparent black background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add shadow */
+  border-radius: 5px; /* Optional: to smooth out corners */
+}
+
+.nav-social-media-icon1{
+  padding-left: 8px;
+}
+
+.main-content-text{
+  background-color: red;
+  margin-left: 335px;
+  height: 173px;
 }
