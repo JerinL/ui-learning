@@ -75,7 +75,7 @@ console.log(student.address);
 
 const arr = [2, 3, 4, 5, 0];
 let min = arr[0];
-for (i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr.length; i++) {
   if (arr[i] < min) {
     min = arr[i];
   }
@@ -125,7 +125,7 @@ const funCall = (car) => {
 
 console.log(funCall(car));
 
-class User {
+ export default class User {
   constructor(id, name, mail) {
     this.id = id;
     this.name1 = name;
@@ -152,7 +152,7 @@ console.log(dis);
 dis.display();
 console.log(dis.getName());
 
-class Person {
+ class Person {
   constructor(id, name, mail) {
     this.id1 = id;
     this.name1 = name;
@@ -211,7 +211,7 @@ studObj.getStudents();
 const teacherObj = new Teacher(2, "teacherName", "teacher123@gmail.com");
 teacherObj.getTeacher();
 
-function findUser(id) {
+export function findUser(id) {
   const id1 = id;
   const name1 = "jerin";
   const age1 = 22;
@@ -245,7 +245,7 @@ console.log(reciveJson);
 const variable = "jerin";
 console.log(variable);
 
-function fName() {
+  function fName() {
   let i = 0;
   while (i < 5) {
     try {
@@ -270,7 +270,6 @@ function fName() {
     }
   }
 }
-fName();
 
 function customError(message) {
   this.message = message;
@@ -334,3 +333,5 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Main element not found.');
   }
 });
+
+// export default {Person};
